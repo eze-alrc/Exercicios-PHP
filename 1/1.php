@@ -5,7 +5,7 @@ class Carro {
     public $anoFabricacao;
 
     public function exibirInformacoes() {
-        echo "Marca: {$this->marca}, Modelo: {$this->modelo}, Ano de Fabricação: {$this->anoFabricacao}\n";
+        echo "Marca: {$this->marca} <br> Modelo: {$this->modelo} <br> Ano de Fabricação: {$this->anoFabricacao}\n";
     }
 }
 

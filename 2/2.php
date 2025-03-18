@@ -1,18 +1,20 @@
 <?php
-class Carro {
-    public $marca;
-    public $modelo;
-    public $anoFabricacao;
+class Pessoa {
+    public $nome;
+    public $idade;
+    public $sexo;
 
-    public function exibirInformacoes() {
-        echo "Marca: {$this->marca}, Modelo: {$this->modelo}, Ano de Fabricação: {$this->anoFabricacao}\n";
+    public function __construct($nome, $idade, $sexo) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+    }
+
+    public function falar() {
+        echo "Olá, meu nome é {$this->nome} e tenho {$this->idade} anos.\n";
     }
 }
 
-$meuCarro = new Carro();
-$meuCarro->marca = "Toyota";
-$meuCarro->modelo = "Corolla";
-$meuCarro->anoFabricacao = 2020;
-
-$meuCarro->exibirInformacoes();
+$pessoa = new Pessoa("João", 25, "Masculino");
+$pessoa->falar();
 ?>
